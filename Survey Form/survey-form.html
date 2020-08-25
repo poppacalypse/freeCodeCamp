@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Build a Survey Form - FCC Responsive Web Design Project</title>
+    <link rel="stylesheet" href="survey.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <header>
+        <h1 id="title">Superkitty™ Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our kitty superhero public service</p>
+      </header>
+
+      <form id="survey-form">
+
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" class="form-field" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" class="form-field" required>
+        </div>
+
+        <div class="form-group">
+          <label for="number" id="number-label">Number of cats in your home <span class="hint">(optional)</span></label>
+          <input type="number" name="cats-at-home" id="number" placeholder="Number of cats at home" class="form-field" min="0" max="20" required>
+        </div>
+
+        <div class="form-group">
+          <label>Which option best describes you?</label>
+          <select id="dropdown" name="role" class="form-field" required>
+            <option disabled selected value>Select current role</option>
+            <option value="mum">Crazy Cat Mum</option>
+            <option value="dad">Crazy Cat Dad</option>
+            <option value="guardian">Crazy Cat Guardian</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Regardless of whether your have cats at home or not, would you still require a Superkitty™ to come save your day?</p>
+          <label>
+            <input name="distress-level" value="yes" type="radio" class="input-radio" checked>Yes, always
+          </label>
+          <label>
+            <input name="distress-level" value="no" type="radio" class="input-radio">No need, I have enough of my own
+          </label>
+          <label>
+            <input name="distress-level" value="unsure" type="radio" class="input-radio">Not sure... can I think about it?
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>What is your favourite feature of Superkitty™?</label>
+          <select id="fav" name="fav" class="form-field" required>
+            <option disabled selected value>Select favourite</option>
+            <option value="on-call">Available on-call 24/7</option>
+            <option value="cute">Has the cutest kitties</option>
+            <option value="free">Can't believe this service is free</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What would you like to see improved? <span class="hint">(check all that apply)</span></p>
+          <label>
+            <input name="improve" value="bigger-pool" type="checkbox" class="input-checkbox" checked>Bigger pool of kitties to choose from
+          </label>
+          <label>
+            <input name="improve" value="more-variety" type="checkbox" class="input-checkbox">More variety
+          </label><label>
+            <input name="improve" value="include-dogs" type="checkbox" class="input-checkbox">Includes doggo superheroes as well
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Any other comments or suggestions?</p>
+          <textarea id="comments" name="comments" placeholder="Type your comment here..." class="input-textarea"></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="btn-submit">Submit</button>
+        </div>
+
+
+
+      </form>
+    </div>
+
+  </body>
+</html>
