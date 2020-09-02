@@ -102,31 +102,37 @@ header {
 }
 .segment {
   display: flex;
-  justify-content: center;
-  width: 40vw;
   margin: auto;
+  width: 40vw;
 }
 #features .icon {
+  display: flex;
   font-size: 3em;
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-  width: 5em;
+  padding-top: 0.5em;
   width: 20%;
-  border: 1px solid red;
 }
 #features .description {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
-  text-align: left;
   width: 80%;
-}
-#features .description p {
-  margin-top: 0;
   text-align: left;
 }
+.description > p {
+  margin-top: 0;
+  text-align: justify;
+}
+#how-it-works {
+  margin: 5vh 0;
+}
+#pricing {
+  background: yellow;
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  margin: auto;
+}
+.subscription {
+  border: 1px solid red;
+}
+
 @media (max-width: 800px) {
   /* MOBILE GLOBAL STYLES */
 
