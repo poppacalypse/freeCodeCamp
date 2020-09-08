@@ -56,7 +56,7 @@ header {
   align-self: flex-end;
 }
 #brand-name {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #bf6952;
   margin-left: -0.1em;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
@@ -123,16 +123,51 @@ header {
   margin: 5vh 0;
 }
 #pricing {
-  background: yellow;
   display: flex;
   justify-content: space-between;
   width: 60vw;
   margin: auto;
 }
 .subscription {
-  border: 1px solid red;
+  border: 1px solid orange;
+  width: 30%;
+  border-radius: 0.6rem;
 }
-
+.tier {
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(255,192,203, 0.5);
+}
+.subscription > ul {
+  list-style: none;
+  padding: 1em;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 0.5em;
+}
+.subscription > ul > li {
+  margin-top: 0.5em;
+}
+.popular {
+  text-transform: uppercase;
+  font-size: 0.5em;
+  padding: 0.25em;
+  background: pink;
+}
+.btn {
+  font-size: 1rem;
+  padding: 0.5em 2em;
+  margin-bottom: 1em;
+  background-image: linear-gradient(120deg, #DD5E89,#F7BB97 100%);
+  border-radius: 1em;
+  border: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.btn:hover,
+.btn:active {
+  background-image: linear-gradient(120deg, #d74273,#f4a171 100%);
+}
 @media (max-width: 800px) {
   /* MOBILE GLOBAL STYLES */
 
