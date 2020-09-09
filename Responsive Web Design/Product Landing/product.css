@@ -13,7 +13,12 @@ body {
   line-height: 1;
   text-align: center;
 }
-
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 /* HEADER STYLES */
 
@@ -25,12 +30,11 @@ header {
   z-index: 20;
 }
 #nav-bar {
-  margin: 0 0 0 -3em;
+  margin: 0 0 0 -5em;
 }
 #nav-bar > ul > li {
   display: inline-block;
   margin-left: 3em;
-  /* font-weight: bold; */
 }
 .nav-link {
   background-image: linear-gradient(150deg, #EDDE5D,#F09819 100%);
@@ -39,7 +43,6 @@ header {
   background-position: 0 100%;
   transition: background-size 0.25s ease-in;
   color: chocolate;
-  text-decoration: none;
 }
 .nav-link:hover,
 .nav-link:active {
@@ -139,7 +142,6 @@ header {
   background: rgba(255,192,203, 0.5);
 }
 .subscription > ul {
-  list-style: none;
   padding: 1em;
   line-height: 1.5;
   text-align: left;
@@ -167,6 +169,32 @@ header {
 .btn:hover,
 .btn:active {
   background-image: linear-gradient(120deg, #d74273,#f4a171 100%);
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(247, 187, 151, 0.4);
+  margin-top: 3em;
+  /* padding: 1em; */
+}
+footer > ul {
+  /* padding: 1em; */
+}
+footer > ul > li {
+  display: inline-block;
+  padding-right: 1em;
+}
+footer ul > li > a {
+  color: chocolate;
+}
+footer > span {
+  padding: 1em;
+  color: #bf6952;
+}
+footer > a > img {
+  display: inline-block;
+  height: 2.5em;
+  margin: 0.3em 0 0 2em;
 }
 @media (max-width: 800px) {
   /* MOBILE GLOBAL STYLES */
