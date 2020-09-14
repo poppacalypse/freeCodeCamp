@@ -20,7 +20,6 @@ a {
   text-decoration: none;
 }
 
-/* HEADER STYLES */
 
 header {
   display: flex;
@@ -31,6 +30,11 @@ header {
 }
 #nav-bar {
   margin: 0 0 0 -5em;
+  top: 0;
+  min-height: 7vh;
+  position: fixed;
+  background-color: #ffeee6;
+  width: 100vw;
 }
 #nav-bar > ul > li {
   display: inline-block;
@@ -50,7 +54,7 @@ header {
   color: #2b2b2b;
 }
 .logo {
-  height: 9vh;
+  height: 11vh;
   display: flex;
 }
 #header-img {
@@ -196,9 +200,13 @@ footer > a > img {
   height: 2.5em;
   margin: 0.3em 0 0 2em;
 }
-@media (max-width: 800px) {
+
+@media only screen and (max-width: 800px) {
   /* MOBILE GLOBAL STYLES */
 
   /* MOBILE HEADER STYLES */
-
+  body {
+    padding: 0;
+    background-color: #000;
+  }
 }
